@@ -1,14 +1,14 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 
-function About() {
+function Done() {
   const navigate = useNavigate();
   return (
     <div>
-      <h4>about page</h4>
-      <button onClick={() => navigate("/done")}>Done</button>
+      <h4>its Done</h4>
+      <button onClick={() => navigate(-1)}>back</button>
     </div>
   );
 }
 
-export default About;
+export default Done;
